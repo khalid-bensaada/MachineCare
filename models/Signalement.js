@@ -33,4 +33,7 @@ const signalementSchema = new mongoose.Schema({
     dateResolution: {
         type: Date
     }
-})
+});
+
+const Signalement = mongoose.model('Signalement', signalementSchema);
+module.exports = Signalement;
