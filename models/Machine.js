@@ -26,4 +26,7 @@ const machineSchema = new mongoose.Schema({
     },
 
     timestamps: true
-})
+});
+
+const Machine = mongoose.model('Machine', machineSchema);
+module.exports = Machine;
