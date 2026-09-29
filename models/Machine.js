@@ -1,7 +1,7 @@
 
 const mongoose = require('mongoose');
 
-const machine = new mongoose.Schema({
+const machineSchema = new mongoose.Schema({
 
     reference: {
         type: String,
