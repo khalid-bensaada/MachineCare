@@ -39,7 +39,7 @@ export async function getMachineById(req ,res){
         res.status(200).json(machine);
     }
     catch (error){
-        res.status(500).json({ message: "Error creating machine", error: error.message });
+        res.status(500).json({ message: "Error getting machine", error: error.message });
     }
 }
 
@@ -61,6 +61,21 @@ export async function updateMachine(req , res){
     }
 
     catch (error){
-        res.status(500).json({ message: "Error creating machine", error: error.message });
+        res.status(500).json({ message: "Error updating machine", error: error.message });
+    }
+}
+
+export async function deleteMachine(req, res){
+
+    try {
+
+        const machineDelete = await Machine.findByIdAndDelete(req.params.id);
+        if (!machineDelete){
+            res.status(404).json({ message: "can't delete this machine"});
+        }
+        res.status(200).json(machineDelete);
+    }
+    catch (error){
+        res.status(500).json({ message: "Error deleting machine", error: error.message });
     }
 }
