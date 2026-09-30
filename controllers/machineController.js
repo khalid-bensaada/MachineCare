@@ -15,12 +15,28 @@ export async function createMachine(req , res){
     }
 }
 
-export async function getAllMachin(req ,res){
+export async function getAllMachines(req ,res){
 
     try {
         const machines = await Machine.find();
-        res.status(201).json(machines);
+        res.status(200).json(machines);
 
+    }
+    catch (error){
+        res.status(500).json({ message: "Error creating machine", error: error.message });
+    }
+}
+
+export async function getMachineById(req ,res){
+
+    try {
+        const machine = await Machine.findById(req.params.id);
+
+        if(!machine){
+            return res.status(404).json({ message: " can't find the machine by this id"});
+        }
+
+        res.status(200).json(machine);
     }
     catch (error){
         res.status(500).json({ message: "Error creating machine", error: error.message });
