@@ -42,3 +42,25 @@ export async function getMachineById(req ,res){
         res.status(500).json({ message: "Error creating machine", error: error.message });
     }
 }
+
+export async function updateMachine(req , res){
+
+    try {
+
+        const machineUpdate = await Machine.findByIdAndUpdate(
+            req.params.id,
+            req.body,
+            {
+                new: true , runValidators: true
+            }
+        );
+        if(!machineUpdate){
+            return res.status(404).json({ message: "can't update this machine"});
+        }
+        res.status(200).json(machineUpdate);
+    }
+
+    catch (error){
+        res.status(500).json({ message: "Error creating machine", error: error.message });
+    }
+}
