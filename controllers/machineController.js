@@ -79,3 +79,11 @@ export async function deleteMachine(req, res){
         res.status(500).json({ message: "Error deleting machine", error: error.message });
     }
 }
+
+module.exports = {
+    createMachine,
+    getAllMachines,
+    getMachineById,
+    updateMachine,
+    deleteMachine
+};
