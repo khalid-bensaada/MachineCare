@@ -14,3 +14,15 @@ export async function createMachine(req , res){
         res.status(500).json({ message: "Error creating machine", error: error.message });
     }
 }
+
+export async function getAllMachin(req ,res){
+
+    try {
+        const machines = await Machine.find();
+        res.status(201).json(machines);
+
+    }
+    catch (error){
+        res.status(500).json({ message: "Error creating machine", error: error.message });
+    }
+}
