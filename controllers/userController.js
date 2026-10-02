@@ -62,3 +62,15 @@ async function login(req ,res){
     }
 }
 
+async function getUsers(req ,res){
+
+    try {
+        const users = await User.find().select("-password");
+
+        res.status(200).json(users);
+    }
+    catch (error){
+        res.status(500).json({ message: "Error getting users", error: error.message });
+    }
+}
+
