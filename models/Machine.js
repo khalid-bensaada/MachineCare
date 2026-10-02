@@ -23,10 +23,8 @@ const machineSchema = new mongoose.Schema({
         type: String,
         enum: ['disponible' , 'en maintenance' , 'hors service'],
         default: 'disponible'
-    },
-
-    timestamps: true
-});
+    }
+},{timestamps: true});
 
 const Machine = mongoose.model('Machine', machineSchema);
 module.exports = Machine;
