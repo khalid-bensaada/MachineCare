@@ -1,6 +1,6 @@
 const Machine = require('../models/Machine');
 
-export async function createMachine(req , res){
+async function createMachine(req , res){
 
     try {
 
@@ -15,7 +15,7 @@ export async function createMachine(req , res){
     }
 }
 
-export async function getAllMachines(req ,res){
+async function getAllMachines(req ,res){
 
     try {
         const machines = await Machine.find();
@@ -27,7 +27,7 @@ export async function getAllMachines(req ,res){
     }
 }
 
-export async function getMachineById(req ,res){
+async function getMachineById(req ,res){
 
     try {
         const machine = await Machine.findById(req.params.id);
@@ -39,11 +39,16 @@ export async function getMachineById(req ,res){
         res.status(200).json(machine);
     }
     catch (error){
+
+        if (error.name === "CastError") {
+            return res.status(400).json({ message: "Invalid machine id format" });
+        }
+
         res.status(500).json({ message: "Error getting machine", error: error.message });
     }
 }
 
-export async function updateMachine(req , res){
+async function updateMachine(req , res){
 
     try {
 
@@ -65,7 +70,7 @@ export async function updateMachine(req , res){
     }
 }
 
-export async function deleteMachine(req, res){
+async function deleteMachine(req, res){
 
     try {
 
