@@ -74,3 +74,24 @@ async function getUsers(req ,res){
     }
 }
 
+async function getUserById(req ,res){
+
+    try {
+        const user = await User.findById(req.params.id).select("-password");
+
+        if(!user){
+            return res.status(404).json({ message: " can't find the user by this id"});
+        }
+
+        res.status(200).json(user);
+    }
+    catch (error){
+
+        if (error.name === "CastError") {
+            return res.status(400).json({ message: "Invalid user id format" });
+        }
+
+        res.status(500).json({ message: "Error getting user", error: error.message });
+    }
+}
+
