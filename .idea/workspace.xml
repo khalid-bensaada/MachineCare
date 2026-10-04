@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eede91cf-148c-47c7-bdc2-c2755246af96" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000000000122344" />
+      <entry key="S60" value="1.0000120233903633" />
+      <entry key="M2" value="1.0121168209838391" />
+      <entry key="M5" value="2.040029022491014" />
+      <entry key="M10" value="9.643192926570839" />
+      <entry key="M15" value="23.624748951710128" />
+      <entry key="M30" value="74.96397123636086" />
+      <entry key="H1" value="150.49379044365912" />
+      <entry key="H2" value="235.62503186787526" />
+      <entry key="H4" value="328.24441306436506" />
+      <entry key="D1" value="664.392133425263" />
+      <entry key="W1" value="1380.7113377242367" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.5205118708388773E-180" />
+      <entry key="S5" value="1.1824857778454783E-72" />
+      <entry key="S10" value="1.0874216191732985E-36" />
+      <entry key="S30" value="1.0283303515110606E-12" />
+      <entry key="S60" value="1.0140662490737793E-6" />
+      <entry key="M2" value="0.0010070854236101183" />
+      <entry key="M5" value="0.06544835159345215" />
+      <entry key="M10" value="0.3210716093690525" />
+      <entry key="M15" value="0.6279907502202683" />
+      <entry key="M30" value="1.427851239739372" />
+      <entry key="H1" value="2.3327244725283847" />
+      <entry key="H2" value="3.1317066421568853" />
+      <entry key="H4" value="3.8036336764634036" />
+      <entry key="D1" value="15.31716034464233" />
+      <entry key="W1" value="48.90344652461464" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.0824692444233059" />
+      <entry key="MS500" value="0.6070974421975234" />
+      <entry key="S2" value="0.8827029962906549" />
+      <entry key="S5" value="0.9513182763317992" />
+      <entry key="S10" value="0.9753554615276419" />
+      <entry key="S30" value="0.9917167307514769" />
+      <entry key="S60" value="0.99586274972965" />
+      <entry key="M2" value="1.0110257649483014" />
+      <entry key="M5" value="2.1040782142660883" />
+      <entry key="M10" value="9.962371070733216" />
+      <entry key="M15" value="24.250432931643488" />
+      <entry key="M30" value="76.38912450893206" />
+      <entry key="H1" value="152.8241306871151" />
+      <entry key="H2" value="238.75491581505622" />
+      <entry key="H4" value="332.0467466083448" />
+      <entry key="D1" value="679.7081690132702" />
+      <entry key="W1" value="1429.6141855812807" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3JxiKgc25ilqKw3A1cO3Ko4yxkc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/youco/Documents/HOSC/MachineCare",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2026.2.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.10315.144" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eede91cf-148c-47c7-bdc2-c2755246af96" name="Changes" comment="" />
+      <created>1790609057405</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1790609057405</updated>
+      <workItem from="1790609058604" duration="35600000" />
+      <workItem from="1791048885736" duration="4948000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/controllers/machineController.js</url>
+          <line>18</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/controllers/machineController.js</url>
+          <line>83</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

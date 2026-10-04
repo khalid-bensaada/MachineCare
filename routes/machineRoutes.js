@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const machineController = require('../controllers/machineController');
+const protect = require('../middlewares/authMiddleware');
+
+router.use(protect);
 
 router.post('/', machineController.createMachine);
 router.get('/', machineController.getAllMachines);

@@ -1,4 +1,5 @@
 const Machine = require('../models/Machine');
+const Signalement = require("../models/Signalement");
 
 async function createMachine(req , res){
 
@@ -18,12 +19,22 @@ async function createMachine(req , res){
 async function getAllMachines(req ,res){
 
     try {
-        const machines = await Machine.find();
-        res.status(200).json(machines);
+        const filter = {};
 
+        if(req.query.atelier) filter.atelier = req.query.atelier;
+        if(req.query.etat) filter.etat = req.query.etat;
+
+        const machines = await Machine.find(filter);
+
+        res.status(200).json(machines);
     }
     catch (error){
-        res.status(500).json({ message: "Error creating machine", error: error.message });
+
+        if (error.name === "CastError") {
+            return res.status(400).json({ message: "Invalid filter format" });
+        }
+
+        res.status(500).json({ message: "Error getting machines", error: error.message });
     }
 }
 
@@ -70,17 +81,29 @@ async function updateMachine(req , res){
     }
 }
 
-async function deleteMachine(req, res){
+async function deleteMachine(req ,res){
 
     try {
+        const signalementsCount = await Signalement.countDocuments({ machine: req.params.id });
 
-        const machineDelete = await Machine.findByIdAndDelete(req.params.id);
-        if (!machineDelete){
-            res.status(404).json({ message: "can't delete this machine"});
+        if(signalementsCount > 0){
+            return res.status(409).json({ message: "Can't delete a machine that has signalements" });
         }
-        res.status(200).json(machineDelete);
+
+        const machine = await Machine.findByIdAndDelete(req.params.id);
+
+        if(!machine){
+            return res.status(404).json({ message: " can't find the machine by this id"});
+        }
+
+        res.status(200).json({ message: "Machine deleted successfully" });
     }
     catch (error){
+
+        if (error.name === "CastError") {
+            return res.status(400).json({ message: "Invalid machine id format" });
+        }
+
         res.status(500).json({ message: "Error deleting machine", error: error.message });
     }
 }
